@@ -1,6 +1,6 @@
 @import url('./variables/index.css');
 @import url('./cards/index.css');
-@import url('./product-purchased-card/index.css');
+@import url('./purchase/index.css');
 
 html {
   font-size: var(--base-fs);
