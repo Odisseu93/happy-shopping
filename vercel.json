@@ -3,7 +3,7 @@
   "name": "application-mvc-happy-shopping",
   "builds": [
     {
-      "src": "src/server.js",
+      "src": "src/app.js",
       "use": "@vercel/node"
     }
   ],
