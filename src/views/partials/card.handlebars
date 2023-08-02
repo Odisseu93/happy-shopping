@@ -1,0 +1,12 @@
+<article class="product" data-id="{{this.id}}">
+  <h3 class="product__title">{{this.title}}</h3>
+  <picture class="product__images">
+    {{#each this.images}}
+      <img src="{{this}}" loading="lazy" alt=" Product image - {{@index}}" />
+    {{/each}}
+  </picture>
+  <p class="product__description">{{this.description}}</p>
+  <p class="product__description">Brand : {{this.brand}}</p>
+  <p class="product__price">Price: <strong>{{this.price}}</strong></p>
+  <button class="product__buy-btn"><a href="/purchase/{{this.id}}">Buy</a></button>
+</article>

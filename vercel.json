@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "application-mvc-happy-shopping",
+  "builds": [
+    {
+      "src": "src/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "src/app.js"
+    }
+  ]
+}

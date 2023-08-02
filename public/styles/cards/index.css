@@ -1,0 +1,110 @@
+.cards {
+  background-color: var(--secondary-color);
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: var(--space-between-elements-desktop);
+  justify-content: space-evenly;
+
+  width: clamp(360px, 100%, 95vw);
+
+  /* padding: var(--space-1); */
+  margin-inline: auto;
+
+  box-shadow: var(--small-shadow);
+}
+
+.cards__heading {
+  margin-left: 2rem;
+  
+  font-size: var(--lg-fs);
+}
+
+.product {
+  background-color: var(--half-dutch-white-color);
+
+  display: flex;
+  flex-flow: row wrap;
+
+  width: clamp(320px, 90%, 100%);
+  height: clamp(320px, 100%, 250px);
+
+  margin-inline: auto;
+  padding: var(--space-2);
+  border-radius: var(--space-1);
+
+  box-shadow: -1px 3px 5px var(--primary-color);
+}
+
+.product__title {
+  width: 100%;
+
+  text-align: left;
+  font-size: calc(var(--default-fs) * 1.1);
+}
+
+.product__images {
+  background-color: var(--white-color);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  gap: calc(var(--space-2) * 2);
+
+  width: clamp(320px, 80% ,100%);
+  max-height: 300px;
+
+  padding: var(--space-1);
+  margin-inline: auto;
+  border-radius: var(--space-1);
+  overflow: auto;
+}
+
+.product__images img {
+  width: clamp(365px,25%, 33.33%);
+  /* max-height: 400px; */
+
+  border-radius: var(--space-1);
+  object-fit: scale-down;
+}
+
+.product__images img:hover {
+  opacity: 0.8;
+}
+
+.product__description {
+  width: 100%;
+
+  text-align: left;
+}
+
+.product__buy-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+
+  width: max-content;
+  height: max-content;
+
+  padding: var(--space-1);
+  border: none;
+  border-radius: var(--space-1);
+  margin-left: 1rem;
+  margin-block: auto;
+
+  font-size: var(--default-fs);
+
+  box-shadow: -1px 3px 5px var(--primary-color);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product__buy-btn:hover {
+    color: var(--green-neon-color);
+  
+    box-shadow: -1px 1px 10px var(--green-neon-color);
+  }
+}
+
+.product__buy-btn:active {
+  transform: scale(0.98);
+}

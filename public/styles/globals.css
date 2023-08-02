@@ -1,0 +1,41 @@
+@import url('./variables/index.css');
+@import url('./cards/index.css');
+@import url('./product-purchased-card/index.css');
+
+html {
+  font-size: var(--base-fs);
+
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--roboto-font);
+  font-weight: var(--regular-fw);
+  font-size: var(--default-fs);
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+a {
+  all: unset;
+}
+
+.page-heading {
+  text-align: center;
+
+  font-size: var(--xl-fs);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
