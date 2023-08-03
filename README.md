@@ -9,8 +9,8 @@
 O Happy shoopping é uma página constuída com:
 - [Nodejs](https://nodejs.org/en)
 - [Express](https://expressjs.com/)
--[Express Handlebars](https://www.npmjs.com/package/express-handlebars)
-- [BasilApi](https://brasilapi.com.br/docs)
+- [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
+- [Dummyjson](https://dummyjson.com/)](https://dummyjson.com)
 - JavaScript, HTML e CSS
 ela é uma simples interface de usuário que simula um site de e-commerce.
 
@@ -40,7 +40,7 @@ conhecer o template engine [Handlebars](https://handlebarsjs.com/) e começar a 
 
 **Instale todas as suas dependencias**
 
-```yarn add``` ou ```npm install```
+```yarn install``` ou ```npm install```
 
 **Rode o servidor**
 
