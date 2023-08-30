@@ -3,6 +3,7 @@ import { dirname } from 'path';
 
 import express from 'express';
 import { engine, create } from 'express-handlebars';
+// eslint-disable-next-line import/extensions
 import ProductRoutes from './routes/ProductRoutes.js';
 
 const fileName = fileURLToPath(import.meta.url);
