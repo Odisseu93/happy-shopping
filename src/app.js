@@ -3,6 +3,7 @@ import { dirname } from 'path';
 
 import express from 'express';
 import { engine, create } from 'express-handlebars';
+import ProductRoutes from './routes/ProductRoutes.js';
 
 const fileName = fileURLToPath(import.meta.url);
 const dirName = dirname(fileName);
@@ -21,22 +22,6 @@ const port = 3000;
 
 app.use(express.static(`${dirName}/../public`));
 
-app.get('/purchase/:code', async (req, res) => {
-  const { code } = req.params;
-  const productRes = await fetch(`https://dummyjson.com/products/${code}`);
-  const json = await productRes.json();
-  const product = json;
-
-  if (product) console.log(product);
-  res.render('purchase', { product });
-});
-
-app.get('/', async (req, res) => {
-  const productsRes = await fetch('https://dummyjson.com/products');
-  const json = await productsRes.json();
-  const { products } = json;
-
-  res.render('home', { products });
-});
+app.use('', ProductRoutes);
 
 app.listen(port, () => console.log('Servidor na porta: %d', port, `${dirName}/../public`));
